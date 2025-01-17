@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Balloon: A Story Website</title>
+    <link rel="stylesheet" href="frontend/style.css">
+</head>
+<body>
+    <!-- this container will hold the lines of the poem -->
+    <div class="container"> 
+        <div class="slide slide1">
+            <h1 class="logo">My Balloon</h1>
+        </div>
+        <div class="slide slide2">
+            <h2 class="line">I held a red balloon, its string in my hand,</h2>
+        </div>
+        <div class="slide slide3">
+            <h2 class="line">It slipped from my fingers, like grains of sand.</h2>
+        </div>
+        <div class="slide slide4">
+            <h2 class="line">It soared to the sky, so carefree, so light,</h2>
+        </div>
+        <div class="slide slide5">
+            <h2 class="line">Dancing with the clouds, a beautiful sight.</h2>
+        </div>
+        <div class="slide slide6">
+            <h2 class="line">It swayed with the clouds, a carefree delight,</h2>
+        </div>
+        <div class="slide slide7">
+            <h2 class="line">Twisting and turning, out of sight.</h2>
+        </div>
+        <div class="slide slide8">
+            <h2 class="line">Higher it climbed, so far and so high,</h2>
+        </div>
+        <div class="slide slide9">
+            <h2 class="line">A speck in the distance, beneath the sky.</h2>
+        </div>
+        <div class="slide slide10">
+            <h2 class="line">But soon, it was lost, so far from my sight,</h2>
+        </div>
+        <div class="slide slide11">
+            <h2 class="line">A sudden pop, and it ended that flight.</h2>
+        </div>
+        <div class="slide slide12">
+            <h2 class="line">What a waste of my money, I now realize,</h2>
+        </div>
+        <div class="slide slide13">
+            <h2 class="line">Spent on a balloon, that met its demise.</h2>
+        </div>
+        <div class="slide slide14">
+            <h2 class="line">If I’d bought some food, a meal to enjoy,</h2>
+        </div>
+        <div class="slide slide15">
+            <h2 class="line">I’d have filled my stomach, instead of this toy.</h2>
+        </div>
+        <div class="slide slide16">
+            <h2 class="line">Next time, I’ll choose what will truly last—</h2>
+        </div>
+        <div class="slide slide17">
+            <h2 class="line">Something to nourish, not just pass.</h2>
+        </div>
+        <!-- fact about the poem -->
+        <div class="slide slide18">
+            <h2 class="line">This was inspired by a native folksong in the Philippines traditionally named "Ako Ay May Lobo" (I Have A Balloon) this is the translated version and extended of this famous folksong</h2>
+        </div>
+        <!-- this slide is where the user will be "subcribing" and where the user will put their data e.g email, name, password -->
+        <div class="slide slide19">
+            <div id="signup" class="page">
+                <div class="form-container">
+                    <h2>Sign Up</h2>
+                    <input type="text" id="signup-name" class="input" placeholder="Enter your name" required>
+                    <input type="email" id="signup-email" class="input" placeholder="Enter your email" required>
+                    <input type="password" id="signup-password" class="input" placeholder="Enter your password" required>
+                    <button id="signup-btn" class="signup-btn">Sign Up</button>
+                    <p id="signup-error" style="color: blue; display: none;">Please fill in all fields.</p>
+                </div>
+            </div>
+            <div id="login" class="page hidden">
+                <div class="form-container">
+                    <h2>Login</h2>
+                    <input type="email" id="login-email" class="input" placeholder="Enter your email" required>
+                    <input type="password" id="login-password" class="input" placeholder="Enter your password" required>
+                    <button id="login-btn" class="login-btn">Login</button>
+                    <p id="login-error" style="color: blue; display: none;">Invalid email or password.</p>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <script src="frontend/script.js"></script>
+    <script src="frontend/index.js"></script>
+</body>
+</html>
