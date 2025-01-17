@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
 
+/* general design */
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +16,7 @@ html, body {
     scroll-behavior: smooth; 
 }
 
+/* the slides will snap into place when the user scrolls */
 .container {
     height: 100%;
     width: 100%;
@@ -30,35 +32,42 @@ html, body {
     justify-content: center;
     scroll-snap-align: start;
     text-align: center;
+    background: linear-gradient(to bottom, #87CEEB, #FFFFFF);
 }
 
+/* the front page of the website */
 .slide1 {
     background-image: url('images/Mobile.png');
     background-size: cover;
     background-position: center;
 }
 
-.slide2 {
-    background: linear-gradient(to bottom, #87CEEB, #FFFFFF);
-}
-
-.slide3 {
-    background: linear-gradient(to bottom, #FFD700, #FFA500);
-}
-
 h1.logo {
-    font-size: 4em;
+    font-size: 2em;
     font-weight: 400;
     color: red;
 }
 
 h2.line {
-    font-size: 2.5em;
+    font-size: 1em;
     font-weight: 400;
     max-width: 650px;
     color: #000;
 }
 
+/* the animation the javascript will call */
+.slide .line {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.slide .line.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* the user input sign in and sign up */
 .form-container {
     display: flex;
     flex-direction: column;
@@ -97,19 +106,33 @@ h2.line {
     border-radius: 0.5rem;
     cursor: pointer;
     transition: background-color 0.25s ease;
+    font-weight: 400;
 }
 
 .signup-btn:hover, .login-btn:hover {
     background-color: #444;
 }
 
-/* Responsive design */
+/* responsive design */
 
-@media screen and (max-width: 1025px) and (max-height: 1024px) {
+@media screen and (min-width: 1025px) {
     .slide1 {
         background-image: url('images/Desktop.png');
         background-size: 100%;
         background-position: center;
+    }
+
+    h1.logo {
+        font-size: 4em;
+        font-weight: 400;
+        color: red;
+    }
+    
+    h2.line {
+        font-size: 2.5em;
+        font-weight: 400;
+        max-width: 650px;
+        color: #000;
     }
 }
 
@@ -118,5 +141,18 @@ h2.line {
         background-image: url('images/Tablet.png');
         background-size: cover;
         background-position: center;
+    }
+
+    h1.logo {
+        font-size: 4em;
+        font-weight: 400;
+        color: red;
+    }
+    
+    h2.line {
+        font-size: 2.5em;
+        font-weight: 400;
+        max-width: 650px;
+        color: #000;
     }
 }

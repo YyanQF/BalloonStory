@@ -1,4 +1,4 @@
-// General Utility Functions
+// general
 function togglePages(targetPageId) {
     document.querySelectorAll('.page').forEach(page => page.classList.add('hidden'));
     document.getElementById(targetPageId).classList.remove('hidden');
@@ -9,16 +9,7 @@ function displayError(element, message) {
     element.style.display = 'block';
 }
 
-// Navigation Functionality
-document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', event => {
-        event.preventDefault();
-        const targetPage = link.getAttribute('data-page');
-        togglePages(targetPage);
-    });
-});
-
-// Signup Functionality
+// sign up
 document.getElementById('signup-btn').addEventListener('click', async () => {
     const name = document.getElementById('signup-name').value.trim();
     const email = document.getElementById('signup-email').value.trim();
@@ -50,7 +41,7 @@ document.getElementById('signup-btn').addEventListener('click', async () => {
     }
 });
 
-// Login Functionality
+// sign in
 document.getElementById('login-btn').addEventListener('click', async () => {
     const email = document.getElementById('login-email').value.trim();
     const password = document.getElementById('login-password').value.trim();

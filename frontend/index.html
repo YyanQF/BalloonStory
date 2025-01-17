@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <!-- this container will hold the lines of the poem -->
+    <div class="container"> 
         <div class="slide slide1">
             <h1 class="logo">My Balloon</h1>
         </div>
@@ -59,7 +60,12 @@
         <div class="slide slide17">
             <h2 class="line">Something to nourish, not just pass.</h2>
         </div>
+        <!-- fact about the poem -->
         <div class="slide slide18">
+            <h2 class="line">This was inspired by a native folksong in the Philippines traditionally named "Ako Ay May Lobo" (I Have A Balloon) this is the translated version and extended of this famous folksong</h2>
+        </div>
+        <!-- this slide is where the user will be "subcribing" and where the user will put their data e.g email, name, password -->
+        <div class="slide slide19">
             <div id="signup" class="page">
                 <div class="form-container">
                     <h2>Sign Up</h2>
@@ -67,7 +73,7 @@
                     <input type="email" id="signup-email" class="input" placeholder="Enter your email" required>
                     <input type="password" id="signup-password" class="input" placeholder="Enter your password" required>
                     <button id="signup-btn" class="signup-btn">Sign Up</button>
-                    <p id="signup-error" style="color: red; display: none;">Please fill in all fields.</p>
+                    <p id="signup-error" style="color: blue; display: none;">Please fill in all fields.</p>
                 </div>
             </div>
             <div id="login" class="page hidden">
@@ -76,7 +82,7 @@
                     <input type="email" id="login-email" class="input" placeholder="Enter your email" required>
                     <input type="password" id="login-password" class="input" placeholder="Enter your password" required>
                     <button id="login-btn" class="login-btn">Login</button>
-                    <p id="login-error" style="color: red; display: none;">Invalid email or password.</p>
+                    <p id="login-error" style="color: blue; display: none;">Invalid email or password.</p>
                 </div>
             </div>
         </div>        
